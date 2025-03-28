@@ -1,0 +1,149 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 3.0//EN">
+<HTML><HEAD>
+<TITLE>IBM ThinkPad 760E, 760ED, 760EL, 760XD, or 760XL User's Guide</TITLE>
+<!-- Begin Header Records  ========================================== -->
+<!-- D:\pub\mmx\html\mmxmst.scr converted by B2H R2.3 (255a) (OS2) on -->
+<!-- 16 Dec 1996 at 19:58:26                                          -->
+<META HTTP-EQUIV="updated"  CONTENT="Mon, 16 Dec 1996 19:57:42">
+<META HTTP-EQUIV="review"  CONTENT="Tue, 16 Dec 1997 19:57:42">
+<META HTTP-EQUIV="expires"  CONTENT="Wed, 16 Dec 1998 19:57:42">
+</HEAD><BODY>
+<!-- End Header Records  ============================================ -->
+<A NAME=Top_Of_Page>&nbsp;</A>
+<H1>IBM ThinkPad 760E, 760ED, 760EL, 760XD, or 760XL User's Guide</H1>
+<B>&#91; <A HREF="#Bot_Of_Page">Bottom of Page</A> &#124; <A HREF="mmxmst09.htm">Previous Page</A> &#124; <A HREF="mmxmst11.htm">Next Page</A> &#124; <A HREF="mmxmst02.htm#ToC">Table of Contents</A> &#124; <A HREF="mmxmst38.htm#HDRINDEX_START">Index</A> &#93;</B><HR><P>
+<H2><A NAME="HDRTHINKP" HREF="mmxmst09.htm#PToC_29">Using the ThinkPad Features Program</A></H2>
+<A NAME="SPTSETA"><I>(Ref #21.)</I></A>
+<A NAME=IDX155>&nbsp;</A>
+<P><B>ThinkPad Features</B> is a control program
+that allows you to configure your computer.
+Using the ThinkPad Features program,
+you can easily
+set up and customize the built-in devices,
+such as the parallel port or infrared port.
+<BR>
+<TABLE BORDER>
+<TR>
+<TD ALIGN=LEFT VALIGN=TOP WIDTH=100%>
+To install the ThinkPad Features program&#58;
+<BR>
+&gt; <A HREF="mmxmst25.htm#HDRINSOS">"Installing Software"</A>.
+<BR></TD></TR></TABLE>
+<P>
+It also provides the Device Configuration Management System,
+which automatically detects a system resource
+(such as IRQ, DMA, I/O address, or memory) conflict, so that
+you can easily set up your computer configuration for the new
+device or software.
+For more details about each device's resource,
+see <A HREF="mmxmst34.htm#HDRSPECIFX">Appendix A. "System Resources"</A>.
+<P>To start the ThinkPad Features program&#58;
+<UL>
+<PRE>
+<B><BR><IMG SRC="c79chos2.gif" ALT="* Figure c79chos2 not displayed."><IMG SRC="c79chwin.gif" ALT="* Figure c79chwin not displayed."><BR></B>
+</PRE>
+<P><LI><I>If you are using OS/2 Warp or Windows,</I>
+select the <B>ThinkPad Features</B> icon in your
+operating system&#58;
+<A NAME="SPTF818"><I>(Ref #22.)</I></A>
+<B><BR><IMG SRC="c79ch81a.gif" ALT="* Figure c79ch81a not displayed."><BR></B>
+<BR>
+<TABLE BORDER>
+<TR>
+<TD ALIGN=LEFT VALIGN=TOP WIDTH=100%>
+<P><B>Note: </B>
+<BR>
+Any buttons on the screen that appear
+in gray are options that cannot be set.
+<BR></TD></TR></TABLE>
+<B><BR><IMG SRC="c79chdos.gif" ALT="* Figure c79chdos not displayed."><BR></B>
+<P><LI><I>If you are using DOS</I>, you can use
+the PS2 commands at the DOS command prompt, instead of this panel.
+</UL>
+<P><P>
+<HR>
+<P><B><I>Other ThinkPad Utilities</I></B>
+<P>The ThinkPad Features program group
+also provides various features&#58;
+<UL>
+<A NAME="SPTFGUTIL2"><I>(Ref #23.)</I></A>
+<P><LI>Fuel-Gauge program
+<UL COMPACT>
+<LI>Remaining power percentage
+<LI>Current power mode
+<LI>Discharge options
+</UL>
+<BR>
+<TABLE BORDER>
+<TR>
+<TD ALIGN=LEFT VALIGN=TOP WIDTH=100%>
+<P>
+Fuel-Gauge program&#58;
+<BR>
+&gt; <A HREF="mmxmst20.htm#HDRBFUEL">"Using the Fuel-Gauge Program"</A>.
+<BR></TD></TR></TABLE>
+<A NAME=IDX156>&nbsp;</A>
+<P><LI>Docking control
+<BR>
+<TABLE BORDER>
+<TR>
+<TD ALIGN=LEFT VALIGN=TOP WIDTH=100%>
+<P><B>Note: </B>
+<BR>
+For details about docking control program,
+see the manual that came with the docking station.
+<BR></TD></TR></TABLE>
+<P><LI>Personalization Editor
+<BR>
+<TABLE BORDER>
+<TR>
+<TD ALIGN=LEFT VALIGN=TOP WIDTH=100%>
+<P>
+Personalization Editor program&#58;
+<BR>
+&gt; <A HREF="mmxmst21.htm#HDRPERS">"Using the Personalization Editor"</A>.
+<BR></TD></TR></TABLE>
+</UL>
+<HR>
+<P>
+<H4><A NAME="HDRUSEF" HREF="mmxmst09.htm#PToC_30">Using the PS2 Commands</A></H4>
+<A NAME=IDX159>&nbsp;</A>
+<A NAME="SPTPRODOS"><I>(Ref #24.)</I></A>
+<P>You can use the ThinkPad Features program from
+the DOS or OS/2 command prompt using PS2 commands.
+Type <TT>PS2 ?</TT> at the DOS prompt to display
+the ThinkPad Features online help menu.
+<P>You can create a batch file to
+set your unique operating environment quickly and easily.
+The following sample
+batch file allows you to set up an operational
+environment that is suitable for traveling and can result in
+longer battery operation time.
+<BR>
+<TABLE BORDER>
+<TR>
+<TD ALIGN=LEFT VALIGN=TOP WIDTH=100%>
+<PRE>
+ 
+@Echo Off
+ 
+Rem  SAMPLE&#58; Set the parameters to provide maximum power utilization.
+ 
+Rem  ================================================================
+ 
+            PS2 PMode Custom DC                   > Nul
+            PS2 LCd 3                             > Nul
+            PS2 DISK 3                            > Nul
+            PS2 POwer 5                           > Nul
+            PS2 SPeed Fixed MIN                   > Nul
+            PS2 STandby 3                         > Nul
+            PS2 IR OFf                            > Nul
+            PS2 SErial OFf                        > Nul
+ 
+</PRE>
+<BR></TD></TR></TABLE>
+<P><P>
+<P><HR><B>&#91; <A HREF="#Top_Of_Page">Top of Page</A> &#124; <A HREF="mmxmst09.htm">Previous Page</A> &#124; <A HREF="mmxmst11.htm">Next Page</A> &#124; <A HREF="mmxmst02.htm#ToC">Table of Contents</A> &#124; <A HREF="mmxmst38.htm#HDRINDEX_START">Index</A> &#93;</B>
+<A NAME=Bot_Of_Page>&nbsp;</A>
+</BODY></HTML>
+

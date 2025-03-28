@@ -1,0 +1,804 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 3.0//EN">
+<HTML><HEAD>
+<TITLE>IBM ThinkPad 760E, 760ED, 760EL, 760XD, or 760XL User's Guide</TITLE>
+<!-- Begin Header Records  ========================================== -->
+<!-- D:\pub\mmx\html\mmxmst.scr converted by B2H R2.3 (255a) (OS2) on -->
+<!-- 16 Dec 1996 at 19:58:26                                          -->
+<META HTTP-EQUIV="updated"  CONTENT="Mon, 16 Dec 1996 19:57:42">
+<META HTTP-EQUIV="review"  CONTENT="Tue, 16 Dec 1997 19:57:42">
+<META HTTP-EQUIV="expires"  CONTENT="Wed, 16 Dec 1998 19:57:42">
+</HEAD><BODY>
+<!-- End Header Records  ============================================ -->
+<A NAME=Top_Of_Page>&nbsp;</A>
+<H1>IBM ThinkPad 760E, 760ED, 760EL, 760XD, or 760XL User's Guide</H1>
+<B>&#91; <A HREF="#Bot_Of_Page">Bottom of Page</A> &#124; <A HREF="mmxmst29.htm">Previous Page</A> &#124; <A HREF="mmxmst31.htm">Next Page</A> &#124; <A HREF="mmxmst02.htm#ToC">Table of Contents</A> &#124; <A HREF="mmxmst38.htm#HDRINDEX_START">Index</A> &#93;</B><HR><P>
+<H2><A NAME="HDRINSNT" HREF="mmxmst25.htm#PToC_191">Installing Software for Windows NT Workstation Version 3.51 or 4.0</A></H2>
+<A NAME=IDX752>&nbsp;</A>
+<B><BR><IMG SRC="c79chwnt.gif" ALT="* Figure c79chwnt not displayed."><BR></B>
+<P>This section describes the installation procedures
+for Windows NT Workstation Version 3.51 or 4.0 (hereafter called <I>Windows NT</I>)
+and its device drivers for your computer.
+Most instructions are common to both Versions 3.51 and 4.0;
+otherwise, the instructions
+state which version they apply to.
+<P>
+Before you install Windows NT in your computer,
+you may need to get
+some updated software from IBM (or Microsoft)
+as follows&#58;
+<TABLE BORDER WIDTH=100%><TR><TH ALIGN=LEFT>How to Get the Updated Software</TH><TR><TD>
+IBM PC Company is providing the updated software through several
+channels so that you can set up Windows NT on your
+computer with the information described here&#58;
+<UL>
+<A NAME=IDX754>&nbsp;</A>
+<A NAME=IDX756>&nbsp;</A>
+<P><LI>WWW Server on the Internet&#58;
+<UL>
+<P><LI><I>For Windows NT 3.51&#58;</I>
+http&#58;//www.pc.ibm.com/support/tps/winnt.html
+<P><LI><I>For Windows NT 4.0&#58;</I>
+http&#58;//www.pc.ibm.com/support/tps/tpwnt.html
+</UL>
+<P><LI>FTP Site&#58;
+<UL>
+<P><LI>ftp&#58;//ftp.pc.ibm.com/pub/pccbbs/mobiles
+</UL>
+<P><LI>CompuServe(**) ThinkPad Forum&#58;
+<UL>
+<P><LI>Join CompuServe ThinkPad Forum (GO THINKPAD) and download the
+necessary software from the library.
+</UL>
+<P><LI>IBM PC Company BBS&#58;
+<UL>
+<P><LI>919-517-0001
+</UL>
+</UL>
+<P>If you cannot get the updated software from either one,
+contact your IBM representative, or contact IBM HelpCenter
+(1-800-772-2227 in the U.S.) for more information.
+</TD></TR></TABLE>
+<P><P>
+<P>Install the following
+to use Windows NT on your ThinkPad computer&#58;
+<UL>
+<P><LI>Install Microsoft Windows NT Workstation Version 3.51 or 4.0
+<BR>
+&gt; <A HREF="#HDRINNT">"Installing Microsoft Windows NT"</A>.
+<P><LI>Install the ThinkPad Video Features
+&gt; <A HREF="#HDRINDDNT">"Installing the Video Features Diskette for Windows NT"</A>.
+<P><LI>Install the Device Driver for PCMCIA Adapter Cards
+&gt; <A HREF="#HDRINPCNT">"Installing the Device Driver for PCMCIA Adapter Cards"</A>.
+<P><LI>Install the Windows NT ThinkPad Features Program
+&gt; <A HREF="#HDRINTFNT">"Installing the ThinkPad Features Program for Windows NT"</A>.
+<P><LI>Install one of the following&#58;
+<UL>
+<P><LI><B><BR><IMG SRC="c79ch7x.gif" ALT="* Figure c79ch7x not displayed.">
+<IMG SRC="c79ch7xd.gif" ALT="* Figure c79ch7xd not displayed."></B>
+The Windows NT Mwave Features
+<BR>
+&gt; <A HREF="#HDRNTMW">"Installing the Mwave DSP Support Software for Windows NT"</A>.
+<BR>
+<B><I>or</I></B>
+<P><LI><B><BR><IMG SRC="c79ch7xl.gif" ALT="* Figure c79ch7xl not displayed."></B>
+The Windows NT ESS Audio Driver Features
+<BR>
+&gt; <A HREF="#HDRINESNT">"Installing the AudioDrive Support Software for Windows NT"</A>.
+</UL>
+<P><LI>Install the ThinkPad PCI-IDE Driver for Windows NT
+&gt; <A HREF="#HDRBUSM">"Installing the ThinkPad PCI-IDE Driver for Windows NT"</A>.
+</UL>
+<P><P>
+<HR>
+<P>
+<H3><A NAME="HDRINNT" HREF="mmxmst25.htm#PToC_192">Installing Microsoft Windows NT</A></H3>
+<A NAME=IDX758>&nbsp;</A>
+Before installing Windows NT,
+read the following&#58;
+<UL>
+<P><LI>Review the Windows NT installation guide.
+<P><LI>If you plan to continue using OS/2 Warp with Windows NT, you
+need to use the OS/2 Warp Boot Manager.  For
+more information, refer to the Windows NT installation guide.
+<P><LI><B>When installing Windows NT 3.51&#58;</B>
+<BR>
+Install Windows NT with <B>Custom Setup</B>
+and specify the video display as
+<B>Standard VGA (640x480, 16 colors)</B>.
+Otherwise, the screen might black out
+when you start Windows NT Version 3.51
+the first time after the installation.
+</UL>
+<P>You can install Windows NT using the internal CD-ROM drive or
+the CD-ROM drive of an IBM docking station (available as an option).
+However, if your computer does not have a CD-ROM drive, or
+if a docking station is not available, use one of the following
+two alternative ways to install Windows NT.
+<UL>
+<P><LI>Using an external CD-ROM drive in a DOS environment.
+<P>If you have an external CD-ROM drive that connects under a
+DOS environment, install Windows NT in DOS.
+<OL>
+<P><LI>Insert the Windows NT compact disc in the external CD-ROM drive.
+<P><LI>Go to the CD-ROM directory; then go to the
+<TT>&#92;&Icap.386</TT> directory.
+<P>For example, if your CD-ROM drive is drive D, go to
+<TT>D&#58;&#92;&Icap.386</TT>.
+<P><LI>At the command prompt, type <B>WINNT</B>; then press
+<B>Enter</B>.
+<P>For example, <TT>D&#58;&#92;&Icap.386&gt;winnt</TT>
+<P><LI>Follow the instructions on the screen to complete the setup.
+</OL>
+<P><LI>Using a network server.
+<P>You can install Windows NT on multiple computers by
+first copying the Windows NT master source files to a
+shared drive on a network server.  After connecting your
+computer to a network, such as with the DOS LAN requester, you
+can install the files from the network server to your
+computer at the DOS command prompt.
+<P>Refer to the Windows NT installation guide for more information.
+</UL>
+<P>To install Windows NT, refer to the installation instruction
+for Windows NT.
+<HR>
+<P>
+<H3><A NAME="HDRINDDNT" HREF="mmxmst25.htm#PToC_193">Installing the Video Features Diskette for Windows NT</A></H3>
+<A NAME=IDX760>&nbsp;</A>
+<A NAME=IDX763>&nbsp;</A>
+<A NAME=IDX766>&nbsp;</A>
+<P>Install the Video Features Diskette to display various
+resolution and color depth configurations.
+<UL>
+<P><LI><I>For Windows NT 3.51,</I> go to <A HREF="#HDRNTD3">"Installing for Windows NT 3.51"</A>.
+<P><LI><I>For Windows NT 4.0,</I> go to <A HREF="#HDRNTD4">"Installing for Windows NT 4.0"</A>.
+</UL>
+<P>
+<H4><A NAME="HDRNTD3" HREF="mmxmst25.htm#PToC_194">Installing for Windows NT 3.51</A></H4>
+<P>To install the video features diskette for Windows NT 3.51,
+do the following&#58;
+<OL>
+<P><LI>Start Windows NT Workstation, and log on with the user ID authorized as
+an administrator.
+<P><LI>Click on <B>Control Panel</B> and then
+<B>Display</B>.
+<P><LI>Click on <B>Change Display Type</B> in the
+Display Settings menu.
+<P><LI>Click on <B>Change</B> in the Display Type menu.
+<P><LI>Click on <B>Other</B> in the Select Device menu.
+<P><LI>Insert the Video Features Diskette for Windows NT 3.51
+into the diskette drive.
+<P>You will see the display devices in the selection list.
+<P><LI>From the display devices in the selection list,
+select <B>IBM ThinkPad (Cyber9320/9382/9385)</B>.
+<P><LI>Click on the <B>Install</B> button.
+<P><LI>Restart Windows NT after installation to make the change effective.
+<P>After you restart Windows NT,
+the display resolution is set to
+640x480 with 256 colors as a default.  If necessary,
+change the resolution and refresh rate as follows&#58;
+<P><LI>Click on <B>Control Panel</B>; then click on <B>Display</B>.
+<P><LI>In the Display Settings menu, click on <B>List All Modes...</B>.
+<P><LI>Select one mode from the list.
+<P><LI>Click on <B>Test</B> and make sure the selected mode
+is displayed correctly on the screen.
+Click on <B>OK</B>.
+<P><LI>Restart Windows NT to make the change effective.
+</OL>
+<P>
+<H4><A NAME="HDRNTD4" HREF="mmxmst25.htm#PToC_195">Installing for Windows NT 4.0</A></H4>
+<P>To install the video features diskette for Windows NT 4.0,
+do the following&#58;
+<OL>
+<P><LI>Start Windows NT, and log on with the user ID authorized as
+an administrator.
+<P><LI>Click on <B>My Computer</B>.
+<P><LI>Click on <B>Control Panel</B> and then
+<B>Display</B>.
+<P><LI>In the Display Properties menu, click on the
+<B>Settings</B> tab; then click on <B>Display Type...</B>.
+<P><LI>In the Display Type menu, click on <B>Change</B>.
+<P><LI>Click on <B>Have Disk...</B>.
+<P><LI>Insert the Video Features Diskette for Windows NT 4.0
+into the diskette drive; then click on <B>OK</B>.
+<P>A selection list appears listing the display device.
+<P><LI>From the display devices in the selection list,
+select <B>IBM ThinkPad (Cyber9320/9382/9385)</B>
+and click on <B>Install</B>.
+<P>The message &quot;You are about to install a
+third-party driver&quot; appears on the screen.
+<P><LI>Click on <B>Yes</B>; then
+follow the instructions on the screen.
+<P><LI>Restart Windows NT to make the change effective.
+<P>After you restart Windows NT,
+the display resolution is set to
+640x480 with 256 colors as a default.  If necessary,
+change the resolution and refresh rate as follows&#58;
+<P><LI>Click on <B>My Computer</B>.
+<P><LI>Click on <B>Control Panel</B>; then click on <B>Display</B>.
+<P><LI>In the Display Properties menu, click on
+the <B>Settings</B> tab.
+<P><LI>Click on <B>List All Modes...</B>, and
+select the resolution,
+color depth, and refresh frequency.
+<P><LI>Click on <B>Test</B> and make sure the selected mode
+is displayed correctly on the screen.
+Click on <B>OK</B>.
+</OL>
+<HR>
+<P>
+<H3><A NAME="Header_196" HREF="mmxmst25.htm#PToC_196">Using the Video Features Diskette for the External Monitor</A></H3>
+<P>If you attach an external monitor to the computer,
+do the following to use the SVGA video driver with the attached
+monitor&#58;
+<P>
+<H4><A NAME="HDRNTE3" HREF="mmxmst25.htm#PToC_197">Using for Windows NT 3.51</A></H4>
+<P>To use the Video Features Diskette for the external monitor,
+do the following&#58;
+<OL>
+<P><LI>Start Windows NT, and log on with the user ID authorized as
+an administrator.
+<P>When the OS Loader V3.51 panel appears; prompting you
+to select the operating system, change the screen to
+CRT-only mode by pressing the <B>Fn</B>&#43;<B>F7</B>
+key combination.
+<P><LI>Log on Windows NT.
+<P>Windows NT starts on the CRT screen.
+<P><LI>Click on <B>Control Panel</B>; then on
+<B>Display</B>.
+<P><LI>In the Display Settings menu, click on the
+<B>List All Modes...</B>.
+<P><LI>Select one of the high resolution modes from the list.
+<P><LI>Click on <B>Test</B> to make sure that
+the selected mode is displayed correctly on the monitor.
+<P><LI>Restart Windows NT to make the change effective.
+</OL>
+<P><P>
+<P>
+<H4><A NAME="HDRNTE4" HREF="mmxmst25.htm#PToC_198">Using for Windows NT 4.0</A></H4>
+<P>To use the Video Features Diskette for the external monitor,
+do the following&#58;
+<OL>
+<P><LI>Start Windows NT, and log on with the user ID authorized as
+an administrator.
+<P>When the OS Loader V4.00 panel appears; prompting you
+to select the operating system, change the screen to
+CRT-only mode by pressing the <B>Fn</B>&#43;<B>F7</B>
+key combination.
+<P><LI>Log on Windows NT.
+<P>Windows NT starts on the CRT screen.
+<P><LI>Click on <B>My Computer</B>.
+<P><LI>Click on <B>Control Panel</B>; then on
+<B>Display</B>.
+<P><LI>In the Display Properties menu, click on the
+<B>Settings</B> tag.
+<P><LI>Click on <B>List All Modes...</B>; then
+select the resolution,
+color depth, and refresh frequency.
+<P><LI>Click on <B>Test</B> to make sure that
+the selected mode is displayed correctly on the monitor.
+<P><LI>Click on <B>OK</B> or <B>Apply</B> to make
+the change effective.
+</OL>
+<TABLE BORDER WIDTH=100%><TR><TH ALIGN=LEFT>Hints</TH><TR><TD>
+<UL>
+<P><LI>If you install the ThinkPad Features program for Windows NT,
+you can switch the display output type--CRT
+(external monitor) only,
+LCD only, or Both, using the ThinkPad Features program.
+<P><LI>If your external monitor displays with flicker noise
+or if the screen image is unstable,
+you can adjust the monitor refresh rate as follows&#58;
+<OL COMPACT>
+<LI>Start the ThinkPad Features program; then open
+the Display menu.
+<LI>Specify your SVGA monitor type and
+select the appropriate refresh rate.
+<LI>Click on <B>OK</B>.
+</OL>
+<P><LI>If you are using Windows NT 4.0, you can
+create different video mode configuration profiles, such
+as one for the LCD mode and another one for the
+CRT mode.  Refer to the Windows NT user's guide
+for more detail of the hardware profile settings.
+</UL>
+</TD></TR></TABLE>
+<HR>
+<P>
+<H3><A NAME="HDRINPCNT" HREF="mmxmst25.htm#PToC_199">Installing the Device Driver for PCMCIA Adapter Cards</A></H3>
+<P>The installation instructions
+for the PCMCIA adapter card device driver
+differ depending on the Windows NT version.
+<P>
+<H4><A NAME="Header_200" HREF="mmxmst25.htm#PToC_200">Installing for Windows NT 3.51</A></H4>
+<A NAME=IDX768>&nbsp;</A>
+<A NAME=IDX771>&nbsp;</A>
+<P>Windows NT comes with integrated PCMCIA support
+for some PC Cards.
+The PCMCIA device driver included in Windows NT does not
+support the
+IBM PCMCIA 16/4 Token Ring Credit Card adapter,
+IBM PCMCIA 16/4 Token Ring Credit Card adapter II, and
+IBM PCMCIA Token Ring Auto 16/4 Credit Card adapter.
+<P>When you use these token ring cards,
+you need to install the IBM PCMCIA Token Ring Device Driver.
+Download the latest
+Windows NT PCMCIA Token Ring Device Driver files from
+IBM PC Company download site.
+<BR>
+<TABLE BORDER>
+<TR>
+<TD ALIGN=LEFT VALIGN=TOP WIDTH=100%>
+<P>IBM PC Company download site
+<BR>
+&gt; <A HREF="#HDRINSNT">"Installing Software for Windows NT Workstation Version 3.51 or 4.0"</A>.
+<BR></TD></TR></TABLE>
+<P>To install the device driver&#58;
+<TABLE BORDER WIDTH=100%><TR><TH ALIGN=LEFT>Note</TH><TR><TD>
+Before you install this driver, you must first install Windows NT
+Version 3.51 Service Pack #2 or a later release.
+</TD></TR></TABLE>
+<OL>
+<P><LI>Click on <B>Main</B> in the <B>Program Manager</B> window.
+Then click on <B>Control Panel</B>,
+<B>Network</B>, and <B>Add Adapter</B>.
+<P>Windows NT prepares a list of the network adapters it supports.
+<P><LI>Click on the dropdown list icon,
+and scroll to the bottom of the list and
+click on <B>&lt;Other&gt; Requires disk from manufacturer.</B>
+<P><LI>When you are prompted,
+insert the driver diskette in the diskette drive.
+Follow the instructions on the screen.
+<P><LI>When you are finished adding the adapter,
+click on <B>OK</B> and follow the instructions on the screen.
+</OL>
+<P>
+<H4><A NAME="Header_201" HREF="mmxmst25.htm#PToC_201">Installing for Windows NT 4.0</A></H4>
+<P>Windows NT 4.0 supports integrated network adapter cards
+for PCMCIA network adapter, ISA adapter, and PCI network adapter
+cards.  To install your adapter card's
+network device driver, do the following&#58;
+<OL>
+<P><LI>Click on <B>My Computer</B>.
+<P><LI>Click on <B>Control Panel</B>; then click on <B>Network</B>.
+<P><LI>Click on the <B>Adapters</B> tab
+in the Network menu; then click on <B>Add</B>.
+<P><LI>Select your network adapter from the option list.
+<P>The following table shows
+the adapter driver names for the IBM PCMCIA network
+adapter cards given in the option list&#58;
+<BR>
+<TABLE>
+<TR>
+<TD ALIGN=LEFT VALIGN=TOP WIDTH=40%><B>Adapter Card Type</B>
+<HR>
+</TD><TD ALIGN=LEFT VALIGN=TOP WIDTH=60%><B>Adapter Driver Name in the Option List</B>
+<HR>
+</TD></TR><TR>
+<TD ALIGN=LEFT VALIGN=TOP WIDTH=40%>IBM Token Ring PCMCIA CCA-I
+</TD><TD ALIGN=LEFT VALIGN=TOP WIDTH=60%>IBM Token Ring (ISA/PCMCIA) Adapter
+</TD></TR><TR>
+<TD ALIGN=LEFT VALIGN=TOP WIDTH=40%>IBM Token Ring PCMCIA CCA-II
+</TD><TD ALIGN=LEFT VALIGN=TOP WIDTH=60%>IBM Token Ring (ISA/PCMCIA) Adapter
+</TD></TR><TR>
+<TD ALIGN=LEFT VALIGN=TOP WIDTH=40%>IBM Auto 16/4 PCMCIA Token Ring
+</TD><TD ALIGN=LEFT VALIGN=TOP WIDTH=60%>IBM Token Ring (ISA/PCMCIA) Adapter
+</TD></TR><TR>
+<TD ALIGN=LEFT VALIGN=TOP WIDTH=40%>IBM Ethernet-II PCMCIA Card
+</TD><TD ALIGN=LEFT VALIGN=TOP WIDTH=60%>IBM Ethernet PCMCIA and Compatible Adapter
+</TD></TR></TABLE>
+<P><LI>Click on <B>OK</B> to install the files.
+<P>You will be prompted for the drive and
+path name for the file location.
+<P><LI>Follow the instructions on the screen.
+</OL>
+<P>During the installation of the network
+device driver, you are prompted to
+enter the option parameters for the
+adapter card.  The following are the most common
+recommended parameters&#58;
+<UL>
+<P><LI>For IBM Token Ring PCMCIA CCA-I,
+IBM Token Ring PCMCIA CCA-II,
+IBM Auto 16/4 PCMCIA Token Ring&#58;
+<P><B>I/O address</B>&#58;  Primary
+<BR>
+<B>Type</B>&#58;  PCMCIA
+<BR>
+<B>Bus number</B>&#58;  0
+<BR>
+<B>IRQ level</B>&#58;  7 or 9
+<BR>
+<B>Memory base address</B>&#58;  0xCA000 or a higher value
+<P><LI>For IBM Ethernet-II PCMCIA Card&#58;
+<P><B>I/O address</B>&#58;  200, 260, or a higher value
+<BR>
+<B>IRQ level</B>&#58;  7 or 9
+<BR>
+<B>Memory base address</B>&#58;  0xC8000 or a higher value
+</UL>
+<P><P>
+<HR>
+<P>
+<H3><A NAME="HDRINTFNT" HREF="mmxmst25.htm#PToC_202">Installing the ThinkPad Features Program for Windows NT</A></H3>
+<A NAME=IDX774>&nbsp;</A>
+<A NAME=IDX777>&nbsp;</A>
+<P>The ThinkPad Features program in Windows NT provides
+the following functions&#58;
+<UL>
+<P><LI>Device configuration and setup
+<P><LI>Fuel-gauge program
+<BR>
+<TABLE BORDER>
+<TR>
+<TD ALIGN=LEFT VALIGN=TOP WIDTH=100%>
+<P><B>Note: </B>
+<BR>
+If you have already installed an old version
+of the ThinkPad Features program and
+are running the Fuel-Gauge program,
+close the Fuel-Gauge program before the installation.
+<BR></TD></TR></TABLE>
+<P><LI>Personalization editor
+<P><LI>Power management function (suspend and resume)
+<P><LI>Warm swapping (Diskette drive and CD-ROM drive UltraBay)
+</UL>
+<P>To install the ThinkPad Features program&#58;
+<OL>
+<P><LI>Start Windows NT.
+<P><LI>Insert the ThinkPad Feature Program Diskette for Windows NT
+into the diskette drive; then
+open <B>Windows NT File Manager</B>.
+<P><LI>Select <B>Drive A</B> on the File Manager menu.
+<P><LI>Double-click on <B>INSTALLN.EXE</B>.
+<P><LI>Follow the instructions on the screen.
+<P>Have ready the &quot;Utility Diskette for DOS, Personalization&quot;
+diskette.  When you select <B>Install Personalization Editor</B>
+on the Installation Options menu, you are prompted to insert
+this diskette.
+</OL>
+<P><B>Notices</B>
+<P>This section describes some notices
+you need to be aware of when you use
+the suspend-resume option
+or personalization feature&#58;
+<UL>
+<P><LI>About the suspend and resume options
+<UL>
+<P><LI>If you encounter some problems with any device
+when entering suspend or resuming, disable the suspend and
+resume options in the ThinkPad Features program's power mode setting
+(<B><IMG SRC="c79chtfg.gif" ALT="* Figure c79chtfg not displayed."></B>).
+<P><LI>If you are using a 760EL or 760XL computer with ac power, and
+if you are using a docking station or a PC Card,
+the computer goes into <I>standby</I> mode instead of
+suspend mode.  This is to avoid such problems as communication link
+breaks or failure when the computer is operating in a network
+environment.
+</UL>
+<P><LI>Using Personalization Editor
+<BR>
+<TABLE BORDER>
+<TR>
+<TD ALIGN=LEFT VALIGN=TOP WIDTH=100%>
+<P>
+Personalization program&#58;
+<BR>
+&gt; <A HREF="mmxmst21.htm#HDRPERS">"Using the Personalization Editor"</A>.
+<BR></TD></TR></TABLE>
+<P>When you finish creating your personal data,
+you must save it in the
+&quot;ThinkPad Utility Diskette for DOS/Personalization.&quot;
+Have ready this diskette before using the
+personalization feature.
+The Windows NT ThinkPad Feature Program diskette does not
+contain the function available in the
+&quot;Utility Diskette for DOS/Personalization,&quot;
+such as storing the personalization data into
+the computer's nonvolatile memory.
+</UL>
+<P><P>
+<HR>
+<P>
+<H3><A NAME="HDRNTMW" HREF="mmxmst25.htm#PToC_203">Installing the Mwave DSP Support Software for Windows NT</A></H3>
+<A NAME=IDX779>&nbsp;</A>
+<A NAME=IDX782>&nbsp;</A>
+<BR>
+<TABLE BORDER>
+<TR>
+<TD ALIGN=LEFT VALIGN=TOP WIDTH=100%>
+<P><B>Note: </B>
+<BR>
+To use the Mwave DSP feature in Windows NT,
+your computer must have a minimum of 16 MB of memory.
+<BR></TD></TR></TABLE>
+<BR>
+<TABLE BORDER>
+<TR>
+<TD ALIGN=LEFT VALIGN=TOP WIDTH=100%>
+<P><B>Note: </B>
+<BR>
+To use the suspend and resume function, you need to
+install the ThinkPad Features program.
+<BR></TD></TR></TABLE>
+<PRE>
+<B><BR><IMG SRC="c79ch7x.gif" ALT="* Figure c79ch7x not displayed."><IMG SRC="c79ch7xd.gif" ALT="* Figure c79ch7xd not displayed."><BR></B>
+</PRE>
+<P>To install the Mwave support software&#58;
+<OL>
+<P><LI>Start Windows NT
+and insert the Windows NT Mwave installation disk 1
+in the diskette drive.
+<P><LI>Do the following&#58;
+<UL>
+<P><LI><I>For Windows NT 3.51&#58;</I>
+Select <B>File</B> from the Program Manager window; then
+select <B>Run...</B> from the pull-down menu.
+<P><LI><I>For Windows NT 4.0&#58;</I>
+Select <B>Run</B> from <B>Start</B>.
+</UL>
+<P><LI>Type <TT>A&#58;&#92;SETUP</TT> in the Open window.
+<P><LI>Click on <B>OK</B> and follow the instructions on
+the screen.
+</OL>
+<TABLE BORDER WIDTH=100%><TR><TH ALIGN=LEFT>Note</TH><TR><TD>
+Non-U.S. users must run the Country Selection program in the
+Mwave window after the Mwave installation is complete.
+Restart the computer after you run Country Selection.
+</TD></TR></TABLE>
+<P>
+<H4><A NAME="Header_204" HREF="mmxmst25.htm#PToC_204">Installing MIDI Sample Files</A></H4>
+<A NAME=IDX784>&nbsp;</A>
+<A NAME=IDX787>&nbsp;</A>
+<P>To use MIDI, install the MIDI sample files separately from
+the Mwave installation&#58;
+<OL>
+<P><LI>Insert the MIDI installation disk in the diskette drive.
+<P><LI>Do the following&#58;
+<UL>
+<P><LI><I>For Windows NT 3.51&#58;</I>
+Select <B>File</B> from the Program Manager window; then
+select <B>Run...</B> from the pull-down menu.
+<P><LI><I>For Windows NT 4.0&#58;</I>
+Select <B>Run</B> from <B>Start</B>.
+</UL>
+<P><LI>Type <TT>A&#58;&#92;SETUP</TT> in the Open window.
+<P><LI>Select <B>Yes</B> when prompted
+if you wish to use the samples.
+<P><LI>When the installation is complete, restart the computer.
+</OL>
+<P>
+<H4><A NAME="Header_205" HREF="mmxmst25.htm#PToC_205">Configuring the Mwave Modem</A></H4>
+<P>After installing the Mwave driver,
+you need to configure the communication port
+number to assign the Mwave modem resources for Windows NT&#58;
+<OL>
+<P><LI>Start the ThinkPad Feature program,
+and double-click on the <B>Modem</B>
+(<B><IMG SRC="c79chtfb.gif" ALT="* Figure c79chtfb not displayed."></B>) icon.
+<P><LI>Select one of the COM ports in the window.
+<BR>
+<TABLE BORDER>
+<TR>
+<TD ALIGN=LEFT VALIGN=TOP WIDTH=100%>
+<P><B>Note: </B>
+<BR>
+A warning message appears if the COM port is already used.
+<BR></TD></TR></TABLE>
+<P><LI>Click on <B>OK</B>.
+<P><LI>In the Main group, double-click on <B>Control Panel</B>.
+Then double-click on <B>Ports</B>.
+<P><LI>Verify that the list of COM ports includes
+the COM port that you chose in the ThinkPad Feature program.
+If not, click on <B>Add</B>.
+When the port is listed, double-click on it.
+<P><LI>In the Advanced Settings dialog box,
+select the following settings&#58;
+<BR>
+<TABLE>
+<TR>
+<TH ALIGN=CENTER VALIGN=TOP WIDTH=38%>COM Port
+</TH><TH ALIGN=CENTER VALIGN=TOP WIDTH=38%>Base I/O Port Address
+</TH><TH ALIGN=CENTER VALIGN=TOP WIDTH=25%>IRQ
+</TH></TR><TR>
+<TD ALIGN=CENTER VALIGN=TOP WIDTH=38%>COM1
+</TD><TD ALIGN=CENTER VALIGN=TOP WIDTH=38%>03F8
+</TD><TD ALIGN=CENTER VALIGN=TOP WIDTH=25%>4
+</TD></TR><TR>
+<TD ALIGN=CENTER VALIGN=TOP WIDTH=38%>COM2
+</TD><TD ALIGN=CENTER VALIGN=TOP WIDTH=38%>02F8
+</TD><TD ALIGN=CENTER VALIGN=TOP WIDTH=25%>3
+</TD></TR><TR>
+<TD ALIGN=CENTER VALIGN=TOP WIDTH=38%>COM3
+</TD><TD ALIGN=CENTER VALIGN=TOP WIDTH=38%>03E8
+</TD><TD ALIGN=CENTER VALIGN=TOP WIDTH=25%>4
+</TD></TR><TR>
+<TD ALIGN=CENTER VALIGN=TOP WIDTH=38%>COM4
+</TD><TD ALIGN=CENTER VALIGN=TOP WIDTH=38%>02E8
+</TD><TD ALIGN=CENTER VALIGN=TOP WIDTH=25%>3
+</TD></TR></TABLE>
+Select the FIFO Enabled check box.
+<P><LI>Select <B>OK</B>.
+<P>If you have made any changes,
+restart the computer to make the changes effective.
+</OL>
+<BR>
+<TABLE BORDER>
+<TR>
+<TD ALIGN=LEFT VALIGN=TOP WIDTH=100%>
+<P><B>Note: </B>
+<BR>
+Currently, the following features are not provided&#58;
+<UL>
+<P><LI>Speaker phone and answering machine
+<P><LI>Sound Blaster game support
+<P><LI>Class-1 fax
+</UL>
+<BR></TD></TR></TABLE>
+<HR>
+<P>
+<H3><A NAME="HDRINESNT" HREF="mmxmst25.htm#PToC_206">Installing the AudioDrive Support Software for Windows NT</A></H3>
+<A NAME=IDX789>&nbsp;</A>
+<A NAME=IDX792>&nbsp;</A>
+<B><BR><IMG SRC="c79ch7xl.gif" ALT="* Figure c79ch7xl not displayed."><BR></B>
+<P>Using the Audio Driver diskette, you can play back
+or record the WAVE/MIDI audio function in Windows NT.
+<P>The installation instructions for the
+AudioDrive support software differ depending on the
+Windows NT Version.  Follow the
+instructions depending on your Windows NT version.
+<BR>
+<TABLE BORDER>
+<TR>
+<TD ALIGN=LEFT VALIGN=TOP WIDTH=100%>
+<P><B>Note: </B>
+<BR>
+Before you install the audio driver, make sure that
+the audio device is enabled using the ThinkPad Features program.
+If the audio device is disabled,
+you cannot install the audio driver correctly.
+<BR></TD></TR></TABLE>
+<P>
+<H4><A NAME="Header_207" HREF="mmxmst25.htm#PToC_207">Installing for Windows NT 3.51</A></H4>
+<P>To install the ESS audio support software
+for Windows NT 3.51&#58;
+<OL>
+<P><LI>Start Windows NT and go to <B>Main</B>.
+Click on <B>Control Panel</B>
+and then <B>Drivers</B>.
+<P><LI>In the Install Driver menu, click on <B>Add...</B> and select
+<B>Unlisted or Updated Driver</B>.
+<P><LI>Specify the drive and path name as <TT>A&#58;</TT>;
+then select <B>OK</B>.
+<P><LI>Select <B>ES1688/ES1788 AudioDrive 1.05.01</B> as the driver
+and select <B>OK</B>.
+<P><LI>When the installation program prompts you,
+restart Windows NT to make the change effective.
+</OL>
+<P>
+<H4><A NAME="Header_208" HREF="mmxmst25.htm#PToC_208">Installing for Windows NT 4.0</A></H4>
+<P>To install the ESS audio support software
+for Windows NT 4.0&#58;
+<OL>
+<P><LI>Start Windows NT Workstation.
+<P><LI>Click on <B>My Computer</B>; then click on
+<B>Control Panel</B>.
+<P><LI>Click on <B>Multimedia</B>; then click
+on <B>Multimedia Properties</B>.
+<P><LI>Click on the <B>Devices</B> tab; then click
+on <B>Add...</B>.
+<P><LI>In the Add menu, select
+<B>Unlisted or Updated Driver</B>; then click on <B>OK</B>.
+<P><LI>Insert the Windows NT 4.0 ESS Audio Driver Diskette
+into the diskette drive.
+<P><LI>Specify the drive and path name as A&#58;&#92;
+in the Install Driver menu.
+<P><LI>Select <B>ES1688 AudioDrive 2.00.08</B> as the driver;
+then click on <B>OK</B>.
+<P>After the driver is installed, a pop-up message
+appears, prompting you to restart Windows NT Workstation.
+<P><LI>Restart Windows NT Workstation.
+</OL>
+<P>
+<H4><A NAME="Header_209" HREF="mmxmst25.htm#PToC_209">Changing the Default Setting</A></H4>
+</B>
+<P>If you need to change the default setting of ESS audio resources
+such as an interrupt level, DMA channel, or I/O base address,
+make sure that the selected values match with
+the ones set by the ThinkPad Features program.
+<P>The ThinkPad Features program allows you to set
+the following alternative resources&#58;
+<DL>
+<P><DT><B>Base I/O Address
+</B><DD>220 or 240  (220 is a default value)
+<P><DT><B>Interrupt
+</B><DD>5, 7, or 10   (5 is a default value)
+<P><DT><B>DMA channel
+</B><DD>1 or 0       (1 is a default value)
+</DL>
+<P>To change the default setting,
+start the ThinkPad Features program and
+change the default setting for ESS audio.
+After setting, restart the Windows NT to make the change effective.
+<P>The Windows NT ESS audio device driver configures the
+resources you have set in the ThinkPad Features program.
+<P>
+<H4><A NAME="Header_210" HREF="mmxmst25.htm#PToC_210">Playback and Recording</A></H4>
+<UL>
+<P><LI>You may be able to record or play back the WAVE file
+or play back MIDI sounds using Sound Recorder or
+Media Player, available in the Accessories
+group.
+For more information, refer to <CITE>Microsoft Windows NT
+Workstation System Guide.</CITE>
+<P><LI>To use the suspend and resume function for the audio device,
+you need to install the ThinkPad Features program.
+<BR>
+<TABLE BORDER>
+<TR>
+<TD ALIGN=LEFT VALIGN=TOP WIDTH=100%>
+<P>
+To install the ThinkPad Features program&#58;
+<BR>
+&gt; <A HREF="#HDRINTFNT">"Installing the ThinkPad Features Program for Windows NT"</A>.
+<BR></TD></TR></TABLE>
+</UL>
+<P><P>
+<HR>
+<P>
+<H3><A NAME="HDRBUSM" HREF="mmxmst25.htm#PToC_211">Installing the ThinkPad PCI-IDE Driver for Windows NT</A></H3>
+<A NAME=IDX794>&nbsp;</A>
+<A NAME=IDX797>&nbsp;</A>
+<P>To fully use the microprocessor of the computer, and
+to use the warm swapping function (to remove the
+diskette drive or CD-ROM drive during suspend mode), install the
+ThinkPad PCI-IDE device driver&#58;
+<OL>
+<P><LI>Start Windows NT; then
+close any running applications.
+<P><LI>Click on <B>My Computer</B>.
+<P><LI>Click on <B>Control Panel</B>; then click on
+<B>SCSI Adapters</B>.
+<P><LI>In the SCSI Adapters menu, click on the <B>Drivers</B>
+tab.
+<P><LI>Click on <B>Add...</B> to add a new driver.
+<P><LI>Insert the Windows NT ThinkPad Utility Diskette
+into the diskette drive; then click on <B>Have Disk...</B>.
+<P><LI>Select <B>OK</B>.
+<P>The Install Driver dialog box appears.
+<P><LI>Select <B>ThinkPad PIIX IDE Driver</B> and
+click on <B>OK</B> .
+<P><LI>To make the new settings effective and continue the
+installation, click on <B>No</B> when you are prompted to
+restart your computer.
+<P>After the installation is complete, the PIIXIDE.SYS file is stored
+in the
+c&#58;&#92;&lt;Win NT directory&gt;&#92;System32&#92;Drivers directory.
+<P>
+Next, you need to set up the warm swap option.  You will use
+the TPFDD.EXE and TPSWAP.EXE programs on the Windows NT
+ThinkPad Utility Diskette.
+<P><LI>Type <TT>TPFDD.EXE I</TT> at the command prompt; then
+press <B>Enter</B>.
+<P>The diskette drive in the UltraBay is assigned as the primary
+diskette drive, even if it is not actually installed in the computer.
+<TABLE BORDER WIDTH=100%><TR><TH ALIGN=LEFT>What the TPFDD.EXE does</TH><TR><TD>
+Ordinarily, if the computer is turned on without the
+internal diskette drive in the UltraBay, the computer
+assigns the primary diskette drive to the
+external diskette drive (which attaches to the external-diskette-drive
+connector).  To always assign the internal diskette drive
+in the UltraBay as the primary diskette drive, you can use TPFDD.EXE.
+<P>To reset this setting, enter <TT>TPFDD.EXE E</TT> at the DOS
+command prompt.
+</TD></TR></TABLE>
+<P><LI>Type <TT>TPSWAP.EXE E</TT> at the command prompt; then
+press <B>Enter</B>.
+<P>The warm swap function is enabled.
+To disable it, enter
+<TT>TPSWAP.EXE D</TT> at the command prompt.
+<P><LI>Restart Windows NT to make the setting effective.
+</OL>
+<P><HR><B>&#91; <A HREF="#Top_Of_Page">Top of Page</A> &#124; <A HREF="mmxmst29.htm">Previous Page</A> &#124; <A HREF="mmxmst31.htm">Next Page</A> &#124; <A HREF="mmxmst02.htm#ToC">Table of Contents</A> &#124; <A HREF="mmxmst38.htm#HDRINDEX_START">Index</A> &#93;</B>
+<A NAME=Bot_Of_Page>&nbsp;</A>
+</BODY></HTML>
+
