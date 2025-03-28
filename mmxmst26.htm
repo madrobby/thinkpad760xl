@@ -1,0 +1,962 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 3.0//EN">
+<HTML><HEAD>
+<TITLE>IBM ThinkPad 760E, 760ED, 760EL, 760XD, or 760XL User's Guide</TITLE>
+<!-- Begin Header Records  ========================================== -->
+<!-- D:\pub\mmx\html\mmxmst.scr converted by B2H R2.3 (255a) (OS2) on -->
+<!-- 16 Dec 1996 at 19:58:26                                          -->
+<META HTTP-EQUIV="updated"  CONTENT="Mon, 16 Dec 1996 19:57:42">
+<META HTTP-EQUIV="review"  CONTENT="Tue, 16 Dec 1997 19:57:42">
+<META HTTP-EQUIV="expires"  CONTENT="Wed, 16 Dec 1998 19:57:42">
+</HEAD><BODY>
+<!-- End Header Records  ============================================ -->
+<A NAME=Top_Of_Page>&nbsp;</A>
+<H1>IBM ThinkPad 760E, 760ED, 760EL, 760XD, or 760XL User's Guide</H1>
+<B>&#91; <A HREF="#Bot_Of_Page">Bottom of Page</A> &#124; <A HREF="mmxmst25.htm">Previous Page</A> &#124; <A HREF="mmxmst27.htm">Next Page</A> &#124; <A HREF="mmxmst02.htm#ToC">Table of Contents</A> &#124; <A HREF="mmxmst38.htm#HDRINDEX_START">Index</A> &#93;</B><HR><P>
+<H2><A NAME="HDROS2" HREF="mmxmst25.htm#PToC_134">Installing Software for OS/2 Warp</A></H2>
+<A NAME=IDX530>&nbsp;</A>
+<A NAME=IDX532>&nbsp;</A>
+<B><BR><IMG SRC="c79chos2.gif" ALT="* Figure c79chos2 not displayed."></B>
+<P>This section describes how to install OS/2 Warp with DOS and Windows,
+and OS/2 ThinkPad device drivers
+in your computer.
+<TABLE BORDER WIDTH=100%><TR><TH ALIGN=LEFT>Important</TH><TR><TD>
+Before reinstalling the operating system and device drivers,
+create the installation diskettes
+using the Diskette Factory program (a diskette backup program
+that is preloaded on your computer).
+<P>In particular, you <I>must create the OS/2 Warp Video Fix Diskette</I>
+to avoid video problems you might encounter while installing
+OS/2 Warp Version 3.
+</TD></TR></TABLE>
+<P>The following shows the software
+already installed at the time of purchase.
+For your computer to work as it did at the
+time of purchase, install all of this software&#58;
+<UL>
+<P><LI>Install OS/2 Warp
+<BR>
+(<B><IMG SRC="c79chfbd.gif" ALT="* Figure c79chfbd not displayed."></B>
+With the CD-ROM device driver)
+&gt; <A HREF="#HDRBEFOS2">"Before Installing OS/2 Warp"</A>.
+<P><LI>Install the ThinkPad Features program
+&gt; <A HREF="#HDRITPOS2">"Installing the ThinkPad Features Program for OS/2"</A>.
+<P><LI>Install the PC Card Director
+&gt; <A HREF="#HDRPLY2OS2">"Installing the PC Card Director for OS/2"</A>.
+<P><LI>Install one of the following&#58;
+<UL>
+<P><LI><B><BR><IMG SRC="c79ch7x.gif" ALT="* Figure c79ch7x not displayed.">
+<IMG SRC="c79ch7xd.gif" ALT="* Figure c79ch7xd not displayed."></B> Mwave support software
+&gt;
+<A HREF="#HDRAUDOS2">"Installing the Mwave DSP Support Software for OS/2"</A>
+<BR>
+<B><I>or</I></B>
+<P><LI><B><BR><IMG SRC="c79ch7xl.gif" ALT="* Figure c79ch7xl not displayed."></B>
+ESS AudioDrive support software
+&gt; <A HREF="#HDRES2">"Installing the ESS AudioDrive Support Software for OS/2"</A>.
+</UL>
+<P><LI>Install the Infrared device driver
+&gt; <A HREF="#HDRIR2">"Installing the Infrared Device Driver for OS/2"</A>.
+<P><LI>Install the ThinkPad display driver
+&gt; <A HREF="#HDRSVGAOS2">"Installing the ThinkPad Display Device Driver for OS/2"</A>.
+<P><LI><B><BR><IMG SRC="c79ch7xd.gif" ALT="* Figure c79ch7xd not displayed."></B>
+Install the Enhanced video and MPEG device driver
+<BR>
+&gt; <A HREF="#HDRSPVW2">"Installing the Enhanced Video/MPEG Device Driver for OS/2"</A>.
+</UL>
+<HR>
+<P>
+<H3><A NAME="HDRBEFOS2" HREF="mmxmst25.htm#PToC_135">Before Installing OS/2 Warp</A></H3>
+<A NAME=IDX534>&nbsp;</A>
+<A NAME=IDX536>&nbsp;</A>
+<B><BR><IMG SRC="c79ch7xl.gif" ALT="* Figure c79ch7xl not displayed."><BR></B>
+<TABLE BORDER WIDTH=100%><TR><TH ALIGN=LEFT>Important</TH><TR><TD>
+If your computer is the 760EL or 760XL (ESS AudioDrive model),
+you <B><I>must</I></B> do the procedure described in
+this section
+before you install OS/2 Warp.
+Otherwise, the OS/2 installation stops
+and you cannot complete the installation.
+</TD></TR></TABLE>
+<P>During the installation of OS/2 Warp
+using the OS/2 Warp Diskette 1,
+the installation stops at the OS/2 logo screen and does not
+move beyond the screen.
+This is because the ESS AudioDrive feature in the computer uses
+the I/O address 330h (for the MIDI port), where
+a Sony(**) CD-ROM device driver in the
+OS/2 Warp Diskette 1
+accesses to detect if the following CD-ROM drive is
+attached to the computer&#58;
+<UL>
+<P><LI>Sony CDU-31A, CDU-7305, CDU-33A, or CDU-7405
+</UL>
+<P>To avoid the installation stop,
+do one of the following, depending on your situation&#58;
+<UL>
+<P><LI><I>If you are using one of these Sony CD-ROM drives,</I>
+<BR>
+refer to
+the chapter describing the special hardware considerations in
+"Special Hardware Considerations" in
+the <CITE>User's Guide to OS/2 Warp</CITE> and read the parameter
+information for the <B>SONY31A.ADD</B> device driver.
+<P>
+After that, you might need to disable the ESS audio,
+or change the ESS audio system resource
+to avoid any resource conflicts.
+In that case, start the ThinkPad Features program and
+register the Sony CD-ROM's resource information.
+Then set the appropriate resources for the ESS audio in the
+ThinkPad Features program.
+<P><LI><I>If you are <B><I>not</I></B> using
+these Sony CD-ROM drives,</I> do the following&#58;
+<OL>
+<P><LI>Make a backup copy diskette of the OS/2 Warp Diskette 1.
+<P><LI>Open the CONFIG.SYS file in the backup copy diskette using
+your editor, and comment out the Sony device driver line
+as follows&#58;
+<PRE>
+   <B>rem</B> BASEDEV=SONY31A.ADD
+</PRE>
+<P><LI>Delete the file <B>SONY31A.ADD</B> from
+the backup copy diskette.
+<P><LI>Install OS/2 Warp using the backup copy diskette
+you have just created.
+</OL>
+</UL>
+<HR>
+<P>
+<H3><A NAME="HDROS2PM" HREF="mmxmst25.htm#PToC_136">Installing IBM OS/2 Warp Version 3 or 4</A></H3>
+<A NAME="SPTOS2INST"><I>(Ref #105.)</I></A>
+<P>
+Your installation of OS/2 Warp
+will differ, depending on whether you use
+the <I>Dual Boot</I> or the <I>Boot Manager</I> for
+switching between OS/2 Warp and DOS/Windows.
+<P>Which type are you going to use?
+<DL>
+<P><DT><I>Dual Boot
+</I><DD>Go to <A HREF="#HDRDUAL">"Installing OS/2 Warp with Dual Boot"</A>.
+<P><DT><I>Boot Manager
+</I><DD>Go to <A HREF="#HDRBOOTM">"Installing OS/2 Warp with the Boot Manager"</A>.
+</DL>
+<TABLE BORDER WIDTH=100%><TR><TH ALIGN=LEFT>Avoiding Video Problems for OS/2 Warp Version 3</TH><TR><TD>
+If you have a video problem, such as a screen blackout,
+when installing OS/2 Warp, go to
+<A HREF="#HDRAVOIV">"Avoiding Video Problems When Installing OS/2 Warp Version 3"</A> to solve the problem.
+</TD></TR></TABLE>
+<P>
+<H4><A NAME="HDRDUAL" HREF="mmxmst25.htm#PToC_137">Installing OS/2 Warp with Dual Boot</A></H4>
+<A NAME=IDX537>&nbsp;</A>
+Install DOS, Windows, and their ThinkPad Features program
+before installing OS/2 Warp.
+<BR>
+<TABLE BORDER>
+<TR>
+<TD ALIGN=LEFT VALIGN=TOP WIDTH=100%>
+<P>
+To install the DOS ThinkPad Features program&#58;
+<BR>
+&gt; <A HREF="mmxmst27.htm#HDRITPDOS">"Installing the ThinkPad Features Program for DOS"</A>.
+<BR></TD></TR></TABLE>
+<BR>
+<TABLE BORDER>
+<TR>
+<TD ALIGN=LEFT VALIGN=TOP WIDTH=100%>
+<P>
+To install the Windows ThinkPad Features program&#58;
+<BR>
+&gt; <A HREF="mmxmst28.htm#HDRITPWIN">"Installing the ThinkPad Features Program for Windows 3.11"</A>.
+<BR></TD></TR></TABLE>
+<P>To install OS/2 Warp&#58;
+<BR>
+<TABLE BORDER>
+<TR>
+<TD ALIGN=LEFT VALIGN=TOP WIDTH=100%><P><B>Note: </B>
+<BR>
+If you have the OS/2 Warp FixPak 10 (XR0010) or later, install it after you complete
+the installation of OS/2 Warp.
+Follow the instructions in the README.1ST file
+in diskette 1 of that FixPak.
+</TD></TR></TABLE>
+<UL>
+<P><LI>
+<UL>
+<P><LI>To install the diskette version of OS/2 Warp,
+refer to the OS/2 documentation; however,
+pay attention to the following during installation&#58;
+<UL>
+<P><LI>Select <B>VGA</B> as the <B>Primary Display</B> in the
+<B>System Configuration</B> window.
+<P><LI>Select <B>No Support Installed</B>,
+not <B>PCMCIA Feature</B>, at
+the <B>System Configuration</B> window.
+</UL>
+<P><LI><B><BR><IMG SRC="c79chfbd.gif" ALT="* Figure c79chfbd not displayed."></B>
+If you are using a CD-ROM model computer and installing
+the CD-ROM version of OS/2 Warp
+using the CD-ROM drive,
+select one of the following according to your configuration&#58;
+<UL>
+<P><LI>To use the CD-ROM drive and
+an externally attached diskette drive,
+go to <A HREF="#HDREXTDD">"Installing OS/2 Warp Using an External Diskette Drive"</A>.
+<P><LI>To use the CD-ROM drive and the internal diskette
+drive by switching between them,
+go to <A HREF="#HDRINTFDD">"Installing OS/2 Warp Using the Internal CD-ROM and Diskette Drive"</A>.
+<TABLE BORDER WIDTH=100%><TR><TH ALIGN=LEFT>Important</TH><TR><TD>
+You need at least 90MB of free space on the hard disk drive.
+</TD></TR></TABLE>
+</UL>
+</UL>
+</UL>
+<HR><H4><A NAME="HDRBOOTM" HREF="mmxmst25.htm#PToC_138">Installing OS/2 Warp with the Boot Manager</A></H4>
+<A NAME=IDX538>&nbsp;</A>
+<P>When you install OS/2 Warp with the Boot Manager&#58;
+<OL>
+<P><LI>Install the Boot Manager, referring to the
+OS/2 Warp documentation.
+<P><LI>Install DOS and Windows, and the ThinkPad Features programs
+for both DOS and Windows.
+<BR>
+<TABLE BORDER>
+<TR>
+<TD ALIGN=LEFT VALIGN=TOP WIDTH=100%>
+<P>
+To install the DOS ThinkPad Features program&#58;
+<BR>
+&gt; <A HREF="mmxmst27.htm#HDRITPDOS">"Installing the ThinkPad Features Program for DOS"</A>.
+<BR></TD></TR></TABLE>
+<BR>
+<TABLE BORDER>
+<TR>
+<TD ALIGN=LEFT VALIGN=TOP WIDTH=100%>
+<P>
+To install the Windows ThinkPad Features program&#58;
+<BR>
+&gt; <A HREF="mmxmst28.htm#HDRITPWIN">"Installing the ThinkPad Features Program for Windows 3.11"</A>.
+<BR></TD></TR></TABLE>
+<P><LI>Install OS/2 Warp&#58;
+<BR>
+<TABLE BORDER>
+<TR>
+<TD ALIGN=LEFT VALIGN=TOP WIDTH=100%>
+<P><B>Note: </B>
+<BR>
+If you have the OS/2 Warp FixPak 10 (XR0010) or later, install it after you complete
+the installation of OS/2 Warp.
+Follow the instructions in the README.1ST file
+in diskette 1 of that FixPak.
+<BR></TD></TR></TABLE>
+<UL>
+<P><LI>If you are installing the diskette version,
+refer to the OS/2 documentation; however,
+pay attention to the following&#58;
+<UL>
+<P><LI>Select <B>VGA</B> as the <B>Primary Display</B> in the
+<B>System Configuration</B> window.
+<P><LI>Select <B>No Support Installed</B>, not <B>System
+Configuration</B>, in
+the <B>System Configuration</B> window.
+<P><LI>
+<B><BR><IMG SRC="c79chfbd.gif" ALT="* Figure c79chfbd not displayed."></B>
+Select <B>Non-Listed IDE CD-ROM or IDE CD-ROM</B> for the CD-ROM
+in the <B>System Configuration</B> window.
+</UL>
+<P>After OS/2 has been successfully installed,
+make sure you restart the computer.
+<P><LI><B><BR><IMG SRC="c79chfbd.gif" ALT="* Figure c79chfbd not displayed."></B>
+If you are using a CD-ROM model computer and installing
+the CD-ROM version of OS/2 Warp
+using the CD-ROM drive,
+select one of the following according to your configuration&#58;
+<UL>
+<P><LI>To use the CD-ROM drive and
+an externally attached diskette drive,
+go to <A HREF="#HDREXTDD">"Installing OS/2 Warp Using an External Diskette Drive"</A>.
+<P><LI>To use the CD-ROM drive and the internal diskette
+drive by switching between them,
+go to <A HREF="#HDRINTFDD">"Installing OS/2 Warp Using the Internal CD-ROM and Diskette Drive"</A>.
+<TABLE BORDER WIDTH=100%><TR><TH ALIGN=LEFT>Important</TH><TR><TD>
+You need at least 90MB of free space on the hard disk drive.
+</TD></TR></TABLE>
+</UL>
+</UL>
+</OL>
+<P>
+<H4><A NAME="HDREXTDD" HREF="mmxmst25.htm#PToC_139">Installing OS/2 Warp Using an External Diskette Drive</A></H4>
+<OL>
+<P><LI>Ensure that DOS and Windows are installed
+in the computer.
+<P><LI>Insert the OS/2 Warp CD-ROM into the CD-ROM drive.
+<P><LI>Open the DOS command prompt and change to the drive
+for the CD-ROM drive.
+<P><LI>Type <TT>CDINST</TT> and press <B>Enter</B>.
+<P>Make copies of the OS/2 Warp diskettes labeled&#58;
+<UL>
+<P><LI>OS/2 Warp Installation Diskette
+<P><LI>OS/2 Warp Diskette 1
+<P><LI>OS/2 Warp Diskette 2 (for OS/2 Warp Version 4 only)
+</UL>
+<P><LI>Shut down OS/2 and turn off the computer.
+<P><LI>Insert the OS/2 Warp Installation Diskette into the
+external diskette drive and turn on the computer.
+<P><LI>When you are prompted to insert OS/2 Warp Diskette 1,
+insert it into the external diskette drive and the OS/2 Warp CD-ROM
+into the CD-ROM drive.
+<P><LI>Follow the instructions on the screen
+until the installation is complete.
+<BR>
+<TABLE BORDER>
+<TR>
+<TD ALIGN=LEFT VALIGN=TOP WIDTH=100%><P><B>Note: </B>
+<BR>
+If you have the OS/2 Warp FixPak 10 (XR0010) or later, install it after you complete
+the installation of OS/2 Warp.
+Follow the instructions in the README.1ST file
+in diskette 1 of that FixPak.
+</TD></TR></TABLE>
+<P>Pay attention to the following during installation&#58;
+<UL>
+<P><LI>Select <B>VGA</B> as the <B>Primary Display</B> in the
+<B>System Configuration</B> window.
+<P><LI>Select <B>No Support Installed</B>, not
+<B>PCMCIA Feature</B>, in
+the <B>System Configuration</B> window.
+<P><LI>Select <B>Non-Listed IDE CD-ROM or IDE CD-ROM</B>
+for the CD-ROM in the <B>System Configuration</B> window.
+</UL>
+<P><LI>Shut down OS/2 and restart the computer.
+</OL>
+<P>
+<H4><A NAME="HDRINTFDD" HREF="mmxmst25.htm#PToC_140">Installing OS/2 Warp Using the Internal CD-ROM and Diskette Drive</A></H4>
+Have ready two formatted, blank 1.44MB diskettes before installation.
+<BR>
+<TABLE BORDER>
+<TR>
+<TD ALIGN=LEFT VALIGN=TOP WIDTH=100%><P><B>Note: </B>
+<BR>
+The following terms are used in these instructions&#58;
+<DL>
+<P><DT>&#91;<VAR>cd</VAR>&#58;&#93;
+<DD>Your CD-ROM drive letter, followed by a colon
+<P><DT>&#91;<VAR>c</VAR>&#58;&#93;
+<DD>Target hard disk drive letter, followed by a colon
+</DL>
+</TD></TR></TABLE>
+<OL>
+<P><LI>Ensure that you have installed DOS and Windows, and have
+at least 90MB of free space on the hard disk drive.
+<P><LI>Insert the OS/2
+Warp CD-ROM into the internal CD-ROM drive.
+<P><LI>Open the DOS command prompt; then
+enter the following to copy all the diskette images
+from the OS/2 Warp CD-ROM to the hard disk drive
+(do not type the
+&#91; &#93; brackets)&#58;
+<UL>
+<P><LI><TT>xcopy &#91;<VAR>cd</VAR>&#58;&#93;&#92;os2image&#92;*.* &#91;<VAR>c</VAR>&#58;&#93;&#92;os2image&#92;*.* /s
+</TT>
+<P><LI><TT>copy &#91;<VAR>cd</VAR>&#58;&#93;&#92;diskimgs&#92;*.* &#91;<VAR>c</VAR>&#58;&#93;&#92;os2image
+</TT>
+<P><LI><TT>copy &#91;<VAR>cd</VAR>&#58;&#93;&#92;diskimgs&#92;os2&#92;35&#92;disk0.dsk &#91;<VAR>c</VAR>&#58;&#93;&#92;os2image
+</TT>
+<P><LI><TT>copy &#91;<VAR>cd</VAR>&#58;&#93;&#92;diskimgs&#92;os2&#92;35&#92;disk1.dsk &#91;<VAR>c</VAR>&#58;&#93;&#92;os2image
+</TT>
+</UL>
+<P><LI>Shut down OS/2 and turn off the computer.
+<P><LI>Replace the CD-ROM drive with the diskette drive;
+then turn on the computer.
+<BR>
+<TABLE BORDER>
+<TR>
+<TD ALIGN=LEFT VALIGN=TOP WIDTH=100%>
+<P>
+To install the diskette drive&#58;
+<BR>
+&gt; <A HREF="mmxmst23.htm#HDRINSTDDV">"Installing the Diskette Drive"</A>.
+<BR></TD></TR></TABLE>
+<P><LI>Create the "OS/2 Disk 1" and
+"OS/2 Warp Installation Diskette" as follows&#58;
+<OL>
+<P><LI>Place a &quot;OS/2 Warp Diskette 1&quot; label on a blank diskette; then
+enter the following&#58;
+<PRE>
+  C:&#92;>cd os2image
+  C:&#92;OS2IMAGE&#92;>loaddskf disk1.dsk a&#58; /f/y
+</PRE>
+<P><LI>After the &quot;OS/2 Warp Diskette 1&quot; diskette has been created,
+open the CONFIG.SYS file on the diskette and find the following
+line&#58;
+<PRE>
+  set os2&#95;shell=sysinst2.exe
+</PRE>
+Change this line to&#58;
+<PRE>
+  set os2&#95;shell=sysinst2.exe &#91;<VAR>c</VAR>&#58;&#93;&#92;os2image
+</PRE>
+Save the CONFIG.SYS file.
+<BR>
+<TABLE BORDER>
+<TR>
+<TD ALIGN=LEFT VALIGN=TOP WIDTH=100%><P><B>Note: </B>
+<BR>
+You can use the E editor supplied with DOS or any other editor
+to edit files.
+</TD></TR></TABLE>
+<P><LI>Place a &quot;OS/2 Warp Installation Diskette&quot; label on a blank diskette; then
+enter
+the following&#58;
+<PRE>
+  C:&#92;OS2IMAGE&#92;>loaddskf disk0.dsk a&#58; /f/y
+</PRE>
+</OL>
+<P><LI>Install OS/2 Warp as follows&#58;
+<OL>
+<P><LI>With the OS/2 Warp Installation Diskette still inserted in
+the diskette drive, restart your computer
+by pressing
+<B>Ctrl</B>&#43;<B>Alt</B>&#43;<B>Del</B>.
+<P><LI>Follow the instructions on the screen; however,
+pay attention to the following during installation&#58;
+<UL>
+<P><LI>Select <B>VGA</B> as the <B>Primary Display</B> in the
+<B>System Configuration</B> window.
+<P><LI>Select <B>No Support Installed</B>, not
+<B>PCMCIA Feature</B>, in
+the <B>System Configuration</B> window.
+<P><LI>Select <B>Non-Listed IDE CD-ROM</B> for the CD-ROM
+in the <B>System Configuration</B> window.
+</UL>
+<BR>
+<TABLE BORDER>
+<TR>
+<TD ALIGN=LEFT VALIGN=TOP WIDTH=100%><P><B>Note: </B>
+<BR>
+Because your CD-ROM drive is not yet installed in the computer
+and cannot be recognized automatically by OS/2 Warp,
+you need to make OS/2 Warp recognize the CD-ROM drive.
+</TD></TR></TABLE>
+<BR>
+<TABLE BORDER>
+<TR>
+<TD ALIGN=LEFT VALIGN=TOP WIDTH=100%><P><B>Note: </B>
+<BR>
+If you have the OS/2 Warp FixPak 10 (XR0010) or later, install it after you complete
+the installation of OS/2 Warp.
+Follow the instructions in the README.1ST file
+in diskette 1 of that FixPak.
+</TD></TR></TABLE>
+<P><LI>When OS/2 Warp installation is complete,
+shut down OS/2 and turn off the computer.
+<P><LI>Replace the diskette drive with the CD-ROM drive;
+then turn on the computer.
+</OL>
+<P>The previous steps leave about 45MB of image files
+on your hard disk drive.
+You can leave these files for future reinstallations, or you can
+remove them to save hard disk space&#58;
+<P><LI>Clean up (optional).
+<OL>
+<P><LI>Open the <B>OS/2 System</B> folder; then
+open the <B>Drives</B> folder.
+<P><LI>Open <B>&#91;<VAR>c</VAR>&#58;&#93; drive</B>; then
+click on the <B>OS2IMAGE</B> folder with the right mouse button
+to bring up the folders menu.
+<P><LI>Click on the <B>Delete</B> menu.
+<P>When you are asked to confirm deletion, select <B>Yes</B>.
+</OL>
+</OL>
+<P>
+<H4><A NAME="HDRAVOIV" HREF="mmxmst25.htm#PToC_141">Avoiding Video Problems When Installing OS/2 Warp Version 3</A></H4>
+<A NAME=IDX540>&nbsp;</A>
+<A NAME=IDX542>&nbsp;</A>
+<P>If you have a video problem when installing OS/2 Warp Version 3,
+do the following operation.
+<BR>
+(If you are installing OS/2 Warp Version 4, you do not need
+to follow this procedure.)
+<OL>
+<P><LI>Make sure you have created
+the OS/2 Warp Video Fix Diskette using the Diskette Factory program.
+<P><LI>Start installing OS/2 Warp.
+<P><LI>When prompted to remove
+OS/2 Warp Diskette 1 and restart the computer,
+insert the OS/2 Warp Installation Diskette
+and restart the computer instead.
+<P><LI><A NAME="LIJUMPS">&nbsp;</A>Continue the installation,
+following the instructions on the screen,
+until the &quot;Welcome&quot; panel appears.
+<P><LI>Press <B>F3</B> and go to the command prompt.
+<P><LI>Insert the OS/2 Warp Video Fix Diskette
+into the diskette drive; then
+type the following command at the command prompt&#58;
+<PRE>
+     a&#58;&#92;repvga <VAR>c</VAR>
+</PRE>
+where <VAR>c</VAR> is the drive where OS/2 Warp is installed.
+The video driver files will be replaced.
+<P><LI><A NAME="LIJUMPF">&nbsp;</A>Remove any diskettes from the
+diskette drive; then restart the
+computer.
+<P>The second half of the Warp installation continues.
+<P><LI>When selecting a video driver,
+select a VGA display driver.
+<P><LI>When prompted to remove any diskettes and restart the computer,
+insert the OS/2 Warp Installation Diskette and restart the computer instead.
+<P><LI>Repeat steps <A HREF="#LIJUMPS">4</A> through
+<A HREF="#LIJUMPF">7</A>.
+<P><LI>Install the SVGA
+video mode driver using
+the Video Features Diskette for OS/2.
+<BR>
+<TABLE BORDER>
+<TR>
+<TD ALIGN=LEFT VALIGN=TOP WIDTH=100%><P><B>Note: </B>
+<BR>
+SVGA means resolution of
+1024x768 or more with
+256 colors or more.
+</TD></TR></TABLE>
+<BR>
+<TABLE BORDER>
+<TR>
+<TD ALIGN=LEFT VALIGN=TOP WIDTH=100%>
+<P>
+To install the video driver&#58;
+<BR>
+&gt; <A HREF="#HDRSVGAOS2">"Installing the ThinkPad Display Device Driver for OS/2"</A>.
+<BR></TD></TR></TABLE>
+<TABLE BORDER WIDTH=100%><TR><TH ALIGN=LEFT>Note</TH><TR><TD>
+When you open System Configuration in Selective Install after
+the video driver installation,
+<TT>Video Graphics Array &#91;VGA&#93;</TT> is
+shown as the Primary Display (representing the LCD).
+However, the video driver
+is correctly installed if you have followed the foregoing procedure.
+</TD></TR></TABLE>
+</OL>
+<HR>
+<P>
+<H3><A NAME="HDRCDSS" HREF="mmxmst25.htm#PToC_142">Installing the CD-ROM Device Driver for OS/2</A></H3>
+<A NAME=IDX545>&nbsp;</A>
+<A NAME=IDX548>&nbsp;</A>
+<A NAME="SPTCDSS"><I>(Ref #106.)</I></A>
+<B><BR><IMG SRC="c79chfbd.gif" ALT="* Figure c79chfbd not displayed."></B>
+If you installed a CD-ROM device driver
+(<B>Non-listed IDE CD-ROM</B> in the System Configuration window)
+when installing OS/2 Warp,
+you do not need to install the CD-ROM device driver.
+Continue with <A HREF="#HDRITPOS2">"Installing the ThinkPad Features Program for OS/2"</A>.
+Have the diskettes that came with the OS/2 system ready; then
+install the CD-ROM device driver for OS/2&#58;
+<A NAME="SPTCDOS2"><I>(Ref #107.)</I></A>
+<OL>
+<P><LI>Start OS/2 Warp; then
+open <B>OS/2 System</B>, <B>System Setup</B>,
+<B>Install/Remove</B> (for OS/2 Warp Version 4 only),
+and then <B>Selective Install</B>.
+<P><LI>Select the <B>CD-ROM Device Support</B> icon.
+<P><LI>Select <B>Non-listed IDE CD-ROM or IDE CD-ROM</B> and click on
+<B>OK</B>.
+<P><LI>Click on <B>OK</B> in the System Configuration
+window.
+<P><LI>In the OS/2 Setup and Configuration window,
+select <B>Install</B>; then
+follow the instructions on the screen.
+</OL>
+<P>For information about the software parameter
+in the CONFIG.SYS file, refer to the README file in the CD-ROM Driver Diskette.
+<HR>
+<P>
+<H3><A NAME="HDRITPOS2" HREF="mmxmst25.htm#PToC_143">Installing the ThinkPad Features Program for OS/2</A></H3>
+<A NAME="SPTINTFOS2"><I>(Ref #108.)</I></A>
+<A NAME=IDX551>&nbsp;</A>
+<A NAME=IDX553>&nbsp;</A>
+<A NAME=IDX554>&nbsp;</A>
+<A NAME=IDX555>&nbsp;</A>
+<P>To install the ThinkPad Features program&#58;
+<OL>
+<P><LI>Start OS/2 Warp; then
+insert the Utility Diskette for OS/2 into the diskette drive.
+<P><LI>Install the ThinkPad System Management device driver&#58;
+<OL>
+<P><LI>Open <B>OS/2 System</B>, <B>System Setup</B>, and then
+<B>Install/Remove</B> (for OS/2 Warp Version 4 only).
+<P><LI>Select <B>Device Driver Install</B> and
+click on the <B>Install...</B> button.
+<P><LI>Click on <B>ThinkPad System Management Device Driver</B>;
+then click on <B>OK</B>.
+</OL>
+<P><LI>Open the OS/2 screen command prompt.
+<P><LI>Go to the A&#58; prompt and
+type <TT>INSTALL2</TT>&#59; then press <B>Enter</B>.
+<P>Follow the instructions on the screen.
+<P><LI>Install the Windows ThinkPad Features program for the WIN-OS/2
+session&#58;
+<OL>
+<P><LI>Exit the OS/2
+screen; then open a WIN-OS/2 full screen.
+<P><LI>Follow the instructions in <A HREF="mmxmst28.htm#HDRITPWIN">"Installing the ThinkPad Features Program for Windows 3.11"</A>.
+</OL>
+<P><LI>Install the DOS ThinkPad Features program to use the
+<TT>PS2</TT> commands.
+<OL>
+<P><LI>Exit the WIN-OS/2 full screen; then open a DOS
+full screen.
+<P><LI>Follow the instructions in <A HREF="mmxmst27.htm#HDRITPDOS">"Installing the ThinkPad Features Program for DOS"</A>.
+</OL>
+</OL>
+<P><HR>
+<H3><A NAME="HDRPLY2OS2" HREF="mmxmst25.htm#PToC_144">Installing the PC Card Director for OS/2</A></H3>
+<A NAME="SPTPC2INST"><I>(Ref #109.)</I></A>
+<A NAME=IDX557>&nbsp;</A>
+<A NAME=IDX560>&nbsp;</A>
+<P>When installing an operating system, you need to
+install the following device drivers and software associated
+with PCMCIA before you can use the PC Cards&#58;
+<BR>
+<TABLE BORDER>
+<TR>
+<TD ALIGN=LEFT VALIGN=TOP WIDTH=100%>
+<P>
+To use PC Card Director&#58;
+<BR>
+&gt; <A HREF="mmxmst13.htm#HDREASYPLY">"Using the PC Card Director Program"</A>.
+<BR></TD></TR></TABLE>
+<BR>
+<TABLE BORDER>
+<TR>
+<TD ALIGN=LEFT VALIGN=TOP WIDTH=100%>
+<P><B>Note: </B>
+<BR>
+CardBus PC Cards cannot be used in OS/2 Warp.
+<BR></TD></TR></TABLE>
+<UL>
+<P><LI>PC Card device drivers&#58;
+<UL>
+<P><LI>Card Services device driver
+<P><LI>Socket Services device driver
+<P><LI>Resource Map Utility device driver
+<P><LI>PC Card Power Management device driver
+<P><LI>PC Card Director utility
+</UL>
+<P><LI>PC Card client device drivers (only when PC Card Director does not
+support the PC Card)
+</UL>
+To install the PC Card Director&#58;
+<OL>
+<P><LI>Start OS/2 Warp; then open the OS/2 full-screen
+command prompt.
+<P><LI>Insert the PC Card Director Diskette for OS/2 into the diskette drive; then
+type <TT>A&#58;&#92;PCMINST2</TT>
+and press <B>Enter</B>.
+<P>Follow the instructions on the screen.
+<P><LI>Click on <B>OK</B> when you have completed the
+installation.
+<P><LI>After the installation is complete,
+close all applications,
+remove the diskette from the diskette drive,
+and restart the computer.
+</OL>
+<P><P>
+<HR>
+<P>
+<H3><A NAME="HDRAUDOS2" HREF="mmxmst25.htm#PToC_145">Installing the Mwave DSP Support Software for OS/2</A></H3>
+<A NAME="SPT2AUDIO"><I>(Ref #110.)</I></A>
+<A NAME=IDX563>&nbsp;</A>
+<A NAME=IDX566>&nbsp;</A>
+<PRE>
+<B><BR><IMG SRC="c79ch7x.gif" ALT="* Figure c79ch7x not displayed."><IMG SRC="c79ch7xd.gif" ALT="* Figure c79ch7xd not displayed."><BR></B>
+</PRE>
+<P>
+If you have multiple operating systems, you might need to
+install the Mwave DSP support software for each operating system.
+For example,
+to enable OS/2 and Windows applications for Mwave functions,
+install the Mwave DSP support software
+for both OS/2 <B><I>and</I></B> Windows.
+<BR>
+<TABLE BORDER>
+<TR>
+<TD ALIGN=LEFT VALIGN=TOP WIDTH=100%>
+<P><B>Note: </B>
+<BR>
+When installing an operating system, you need to install the
+Mwave DSP support software.
+<BR></TD></TR></TABLE>
+<P>To install the Mwave DSP support software&#58;
+<OL>
+<P><LI>Start OS/2 Warp; then open the OS/2 screen command prompt.
+<P><LI>Insert the Mwave DSP Features Diskette 1 for OS/2 into the diskette
+drive; then
+type <TT>A&#58;SETUP</TT> and
+press <B>Enter</B>.
+<P>The installation window appears on the screen.
+<P><LI>Follow the instructions on the screen to
+complete the installation.
+<P><LI>Restart OS/2 to make the Mwave features effective.
+<P><LI>Install Mwave MMPM audio support software
+as follows&#58;
+<OL>
+<P><LI>Insert the Mwave DSP Features Diskette for OS/2 Audio into the diskette drive; then
+type <TT>A&#58;SETUP</TT> at the command prompt and
+press <B>Enter</B>.
+<P><LI>Follow the instructions on the
+screen.
+</OL>
+<P><LI>After the installation is complete, remove any diskette from
+the diskette drive; then
+restart OS/2.
+<P>For detail information about the installation,
+see the README.TXT file in the Mwave DSP Features Diskette 1 for OS/2.
+</OL>
+<TABLE BORDER WIDTH=100%><TR><TH ALIGN=LEFT>Note</TH><TR><TD>
+Non-U.S. users must run the Country Selection program in the
+Mwave window after the Mwave installation is complete.
+Restart the computer after you run Country Selection.
+</TD></TR></TABLE>
+<TABLE BORDER WIDTH=100%><TR><TH ALIGN=LEFT>When You Use the WIN-OS/2 Environment</TH><TR><TD>
+If you use the Mwave functions in WIN-OS/2&#58;
+<OL>
+<P><LI>Install the Mwave DSP support software for Windows
+in a full screen WIN-OS/2 environment with the procedure
+on <A HREF="mmxmst28.htm#HDRAUDWIN">"Installing the Mwave DSP Support Software for Windows 3.11"</A>.
+<P><LI>Check your <B>WIN-OS/2 Settings</B> and modify
+them as follows, referring to your OS/2 manuals&#58;
+<DL COMPACT>
+<DT><B>WIN&#95;RUN&#95;MODE
+</B><DD>3.1 Enhanced Compatibility
+<DT><B>HW&#95;TIMER
+</B><DD>ON
+<DT><B>INT&#95;DURING&#95;IO
+</B><DD>ON
+<DT><B>DOS&#95;BACKGROUND&#95;EXECUTION
+</B><DD>ON
+</DL>
+</OL>
+</TD></TR></TABLE>
+<HR>
+<P>
+<H3><A NAME="HDRES2" HREF="mmxmst25.htm#PToC_146">Installing the ESS AudioDrive Support Software for OS/2</A></H3>
+<A NAME=IDX568>&nbsp;</A>
+<A NAME=IDX571>&nbsp;</A>
+<B><BR><IMG SRC="c79ch7xl.gif" ALT="* Figure c79ch7xl not displayed."><BR></B>
+<P>To install the support software&#58;
+<UL>
+<P><LI><I>If you use OS/2 Warp Version 4,</I>
+you need not install the ESS AudioDrive support software.
+<P>The ESS AudioDrive ESS1688 support software is automatically installed
+during the OS/2 Warp Version 4 installation.
+However, if you have WIN-OS/2 installed on you computer,
+you must install ES1688 WIN-OS2/Windows Audio.
+<P><LI><I>If you use OS/2 Warp Version 3&#58;</I>
+<OL>
+<P><LI>Start OS/2 Warp; then
+open the OS/2 full-screen command prompt.
+<P><LI>Insert the AudioDrive Features Diskette for OS/2 into the diskette drive; then
+type <TT>A&#58;ESINST</TT>; and press <B>Enter</B>.
+<P><LI>Select <B>AudioDrive ES1688</B> from the list.
+<P>Make sure the source drive is A&#58;.
+<P>If you have WIN-OS/2 installed on your computer, also select
+<B>ES1688 WinOS2/Windows Audio</B>.
+<BR>
+<TABLE BORDER>
+<TR>
+<TD ALIGN=LEFT VALIGN=TOP WIDTH=100%>
+<P><B>Note: </B>
+<BR>
+When you install OS/2 Warp, you must select
+<B>Multimedia Software Support</B>
+in the OS/2 Setup and Installation window.
+<BR>
+If you encounter the SYS1041 error message
+during the AudioDrive software installation,
+make sure you selected the multimedia software support.
+<BR></TD></TR></TABLE>
+<P><LI>Click on <B>Install</B>; then
+follow the instructions on the screen.
+<P><LI>When you have completed the installation,
+restart the computer.
+</OL>
+</UL>
+<HR>
+<P>
+<H3><A NAME="HDRIR2" HREF="mmxmst25.htm#PToC_147">Installing the Infrared Device Driver for OS/2</A></H3>
+<A NAME="SPTIROS2"><I>(Ref #111.)</I></A>
+<A NAME=IDX574>&nbsp;</A>
+<A NAME=IDX576>&nbsp;</A>
+<P>The infrared device driver for OS/2 Warp
+is included in the application <B>TranXit for OS/2</B>.
+<P>If you have an infrared application such as TranXit version 1.0
+for Windows that runs in WIN-OS/2, install the
+WIN-OS/2 infrared device driver&#58;
+<OL>
+<P><LI>Start OS/2 Warp.
+<P><LI>If you have not installed DOS and WIN-OS/2 support
+for OS/2, install it by referring to your
+operating system documents.
+<P><LI>Go to the DOS command prompt and
+insert the Infrared Features Diskette into the diskette drive.
+<P><LI>Type <TT>A&#58;UINSTALL</TT>
+and press <B>Enter</B>.
+<P>The following screen appears&#58;
+<B><BR><IMG SRC="c79ch260.gif" ALT="* Figure c79ch260 not displayed."><BR></B>
+<P><LI>Press <B>Enter</B>; then
+follow the instructions on the screen.
+<P>Select <B>Install Win-OS2 ThinkPad InfraRed Driver</B>
+when you are prompted.
+</OL>
+<TABLE BORDER WIDTH=100%><TR><TH ALIGN=LEFT>Starting TranXit for Windows or Other IR Applications</TH><TR><TD>
+If you are going to start TranXit version 1.0 for Windows
+or any other Windows
+infrared applications that use the ThinkPad infrared
+device driver from&#58;
+<UL>
+<P><LI>The Program Manager window, do the following&#58;
+<OL>
+<P><LI>With the right mouse button,
+click on the Program Manager object in the
+<B>Windows Programs</B> folder or the <B>WIN-OS2</B>
+(full screen or window) object
+in the <B>Command Prompts</B> folder.
+<P><LI>Select <B>Settings or Properties</B>, <B>Session</B>, and
+then <B>WIN-OS/2 Settings</B>, and
+modify the following setting as shown&#58;
+<DL>
+<P><DT><B>COM&#95;DIRECT&#95;ACCESS
+</B><DD>ON
+</DL>
+</OL>
+<P><LI>A separate object that you have created for the infrared application,
+do the following&#58;
+<OL>
+<P><LI>With the right mouse button, click on the object.
+<P><LI>Select <B>Settings or Properties</B>, <B>Session</B>,
+and then check <B>Separate Session.</B>
+<P><LI>Select <B>WIN-OS/2 Settings</B> and modify the following
+setting as shown&#58;
+<DL>
+<P><DT><B>COM&#95;DIRECT&#95;ACCESS
+</B><DD>ON
+</DL>
+</OL>
+</UL>
+</TD></TR></TABLE>
+<HR>
+<P>
+<H3><A NAME="HDRSVGAOS2" HREF="mmxmst25.htm#PToC_148">Installing the ThinkPad Display Device Driver for OS/2</A></H3>
+<A NAME="SPT2VIDEO"><I>(Ref #112.)</I></A>
+<A NAME=IDX578>&nbsp;</A>
+<A NAME=IDX582>&nbsp;</A>
+<A NAME=IDX585>&nbsp;</A>
+<P>The display driver enables you to use various screen resolutions and
+colors
+for the LCD and external monitor.
+The display driver also takes advantage of the computer's video capability.
+<BR>
+<TABLE BORDER>
+<TR>
+<TD ALIGN=LEFT VALIGN=TOP WIDTH=100%>
+<P><B>Note: </B>
+<BR>
+When installing an operating system, you need to
+install the ThinkPad display device driver.
+<BR></TD></TR></TABLE>
+<TABLE BORDER WIDTH=100%><TR><TH ALIGN=LEFT>Before Installation</TH><TR><TD>
+Before you begin installing
+the display driver, set the display device mode to
+<I>LCD</I>&#58;  open the ThinkPad Features program and
+select the <B>LCD</B> (<B><IMG SRC="c79ch8g.gif" ALT="* Figure c79ch8g not displayed."></B>) icon,
+or at the command prompt, type
+<TT>PS2 SC LCD</TT> and press <B>Enter</B>.
+</TD></TR></TABLE>
+<BR>
+<TABLE BORDER>
+<TR>
+<TD ALIGN=LEFT VALIGN=TOP WIDTH=100%>
+<P>
+To use the ThinkPad Features program&#58;
+<BR>
+&gt; <A HREF="mmxmst10.htm#HDRTHINKP">"Using the ThinkPad Features Program"</A>.
+<BR></TD></TR></TABLE>
+<P>To install the ThinkPad display device driver&#58;
+<OL>
+<P><LI>Start OS/2 Warp.
+<P><LI>Insert the following Video Features Diskette for OS/2 into the diskette drive&#58;
+<DL>
+<P><DT><B>ThinkPad 760EL DSTN model
+</B><DD>Video Features Diskette for OS/2 I
+<P><DT><B>Other computers (TFT models)
+</B><DD>Video Features Diskette for OS/2 II
+</DL>
+<P><LI>Open the OS/2 full screen or OS/2 window and
+go to the A&#58; prompt.
+<P><LI>Type <TT>INSTALL</TT> and press <B>Enter</B>.
+<P>Follow the instructions on the screen.
+<P><LI>After the installation is complete, remove the diskette,
+shut down OS/2, and restart the computer.
+</OL>
+<HR>
+<P>
+<H3><A NAME="HDRSPVW2" HREF="mmxmst25.htm#PToC_149">Installing the Enhanced Video/MPEG Device Driver for OS/2</A></H3>
+<A NAME="SPTSUPV"><I>(Ref #113.)</I></A>
+<A NAME=IDX587>&nbsp;</A>
+<A NAME=IDX590>&nbsp;</A>
+<B><BR><IMG SRC="c79ch7xd.gif" ALT="* Figure c79ch7xd not displayed."><BR></B>
+<P>This section is for computers with the Enhanced Video/MPEG features
+installed.
+<TABLE BORDER WIDTH=100%><TR><TH ALIGN=LEFT>Important</TH><TR><TD>
+To use the Video Overlay/Capture and MPEG functions, make sure you
+have installed the following software
+before installing the Video Overlay/Capture and MPEG device drivers&#58;
+<UL>
+<P><LI>ThinkPad Display Driver (9385) for OS/2 Warp
+<P><LI>Mwave DSP support software
+<P><LI><B>Video IN</B> from the OS/2 BonusPak
+preloaded on the computer
+</UL>
+</TD></TR></TABLE>
+<P><P>
+<P>
+<H4><A NAME="Header_150" HREF="mmxmst25.htm#PToC_150">Installing the MMPM/2 MPEG Update Diskette</A></H4>
+<A NAME="SPTMPEG2"><I>(Ref #114.)</I></A>
+<TABLE BORDER WIDTH=100%><TR><TH ALIGN=LEFT>Important</TH><TR><TD>
+This procedure is necessary only for OS/2 Warp Version 3 and 3.01.
+For Version 4 or later, skip this section.
+</TD></TR></TABLE>
+To install the MMPM/2 MPEG Update Diskette&#58;
+<OL>
+<P><LI>Start OS/2 Warp and
+open the <B>Multimedia</B> folder from the desktop; then
+click on the <B>Multimedia Application Install</B> icon.
+<P><LI>Insert the MMPM/2 MPEG Update Diskette
+into the diskette drive.
+<P><LI>Make sure the drive letter is
+A; then click on <B>OK</B>.
+<P><LI>Select from the list on the screen; then click on
+<B>Install</B>.
+<P>Follow the instructions on the screen.
+</OL>
+<P>
+<H4><A NAME="HDRVOC2" HREF="mmxmst25.htm#PToC_151">Installing the Video Overlay/Capture and MPEG Device Drivers</A></H4>
+<BR>
+To install the Video Overlay/Capture and MPEG device drivers&#58;
+<OL>
+<P><LI>Start OS/2 Warp and
+open the <B>Multimedia</B> folder from the desktop; then
+click on the <B>Multimedia Application Install</B>
+icon.
+<P><LI>Insert the MPEG/Video Capture Driver Diskette for OS/2
+into the diskette drive of the computer.
+<P><LI>Make sure the drive letter is A&#58;;
+then click on <B>OK</B>.
+<P><LI>Select all of the driver listed on the screen;
+then click on <B>Install</B>.
+<P>Follow the instructions on the screen.
+</OL>
+<P><P>
+<P><HR><B>&#91; <A HREF="#Top_Of_Page">Top of Page</A> &#124; <A HREF="mmxmst25.htm">Previous Page</A> &#124; <A HREF="mmxmst27.htm">Next Page</A> &#124; <A HREF="mmxmst02.htm#ToC">Table of Contents</A> &#124; <A HREF="mmxmst38.htm#HDRINDEX_START">Index</A> &#93;</B>
+<A NAME=Bot_Of_Page>&nbsp;</A>
+</BODY></HTML>
+
